@@ -14,10 +14,10 @@
         <title>Translator's Portfolio</title>
         <meta content="Translator's Portfolio" property="og:title">
         <meta
-            content="A Portfolio for the translator Yizhou Fan a.k.a. LeafJensen"
+            content="A Portfolio for the translator Yizhou Fan, a.k.a. LeafJensen"
             name="description">
         <meta
-            content="A Portfolio for the translator Yizhou Fan a.k.a. LeafJensen"
+            content="A Portfolio for the translator Yizhou Fan, a.k.a. LeafJensen"
             property="og:description">
         <meta content="summary_large_image" name="twitter:card">
         <meta content="@LeafLostIt" name="twitter:site">
@@ -26,6 +26,10 @@
         <link href="/" rel="preconnect" crossorigin>
         <link href="/fonts/nunito-sans-v11-latin-regular.woff2" rel="preload"
             crossorigin as="font" type="font/woff2">
+            <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Tisa+Sans+JP&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;700&display=swap" rel="stylesheet">
         <style>
         :root {
             --primary: #66d8ee;
@@ -51,7 +55,7 @@
             font-weight: 200;
             padding: .75em calc(50vw - 37rem + 1.5em);
             position: fixed;
-            text-align: right;
+            text-align: left;
             top: 0;
             width: 100vw
         }
@@ -97,15 +101,6 @@
             margin-bottom: .5em
         }
 
-        @font-face {
-            font-display: optional;
-            font-family: 'Nunito Sans';
-            font-style: normal;
-            font-weight: 400;
-            src: url(/fonts/nunito-sans-v11-latin-regular.eot);
-            src: local(''), url(/fonts/nunito-sans-v11-latin-regular.eot?#iefix) format('embedded-opentype'), url(/fonts/nunito-sans-v11-latin-regular.woff2) format('woff2'), url(/fonts/nunito-sans-v11-latin-regular.woff) format('woff'), url(/fonts/nunito-sans-v11-latin-regular.ttf) format('truetype'), url(/fonts/nunito-sans-v11-latin-regular.svg#NunitoSans) format('svg')
-        }
-
         html {
             -webkit-text-size-adjust: 100%;
             line-height: 1.15;
@@ -147,9 +142,34 @@
         }
 
         h2 {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 1.5em;
+            line-height: 1.0em;
+            margin: .5em
+        }
+
+        motto {
+            font-family: 'Nunito Sans', sans-serif;
+            font-style: italic;
+            font-size: 2.0em;
+            line-height: 2.5rem;
+            margin-bottom: .5em
+        }
+
+        motto-jp {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-style: italic;
+            font-size: 2.0em;
+            line-height: 2.5rem;
+            margin-bottom: .5em
+        }
+
+        motto-cn {
+            font-family: 'Nunito Sans', sans-serif;
+            font-style: italic;
             font-size: 2.5em;
-            line-height: 1.2;
-            margin-bottom: .6em
+            line-height: 2.5rem;
+            margin-bottom: .4em
         }
 
         p,
@@ -157,14 +177,9 @@
             margin-bottom: 1.5em
         }
 
-        h1,
-        h2 {
+        h1 {
             line-height: 2.4rem;
             margin-bottom: 1.36rem
-        }
-
-        h2 {
-            font-size: 1.728rem
         }
 
         body,
@@ -177,43 +192,6 @@
         p,
         ul {
             margin-bottom: 1.36rem
-        }
-
-        @media (min-width:600px) {
-            h1 {
-                font-size: 4.3978rem;
-                line-height: 4.4rem;
-                margin-bottom: 1.496rem
-            }
-
-            p h2 {
-                font-size: 3.1097rem;
-                line-height: 3.52rem
-            }
-
-            body,
-            p,
-            ul {
-                font-size: 1.1rem;
-                line-height: 1.6
-            }
-
-            h2,
-            p,
-            ul {
-                margin-bottom: 1.496rem
-            }
-        }
-
-        h1,
-        h2,
-        header nav,
-        header nav h1 {
-            font-family: var(--font-family)
-        }
-
-        h2 {
-            font-style: italic
         }
 
         a:hover {
@@ -282,6 +260,12 @@
             margin-right: 1.5em
         }
 
+        header {
+            border-top: .5px solid #ccc;
+            margin: 0 auto;
+            max-width: 70rem
+        }
+
         main {
             border-top: .5px solid #ccc;
             margin: 0 auto;
@@ -325,27 +309,29 @@
         li ul {
             margin-bottom: 0
         }
+
+        .jp-text {
+            font-family: 'Yu Gothic UI', sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+        }
+
+        .left {
+            padding: 20px;
+        }
+
+        .right {
+            padding: 20px;
+        }
     </style>
     </head>
 
     <body>
         <header>
             <nav>
-            </nav>
-            <div id="header-title">
-                <h1>Translator's Portfolio</h1>
-            </div>
-            <dialog id="message"></dialog>
-        </header>
-        <main>
-            <article>
-                <p>Video game translator based in Tokyo, Japan.</p>
-                <p></p>
-                <p></p>
-                <p></p>
-            </article>
-        </main>
-        <footer>
             <a href="mailto:leafjensen14@gmail.com"><svg fill="#eee" height="24"
                     role="img" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
@@ -355,15 +341,73 @@
                     </path>
                 </svg>
             </a>
-            <a href="https://www.twitter.com/LeafLostIt"><svg fill="#eee"
+            <a href="https://www.x.com/LeafLostIt"><svg fill="#eee"
                     height="24" role="img" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
-                    <title>Twitter</title>
+                    <title>X</title>
                     <path
                         d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
                     </path>
                 </svg>
             </a>
+            </nav>
+            <h1>Yizhou Fan, a.k.a. LeafJensen,</h1>
+            <h3>translating with the following style since 2014.</h3>
+        </header>
+        <header>
+            <!-- <div id="header-title"> -->
+                <motto>Accurate like papers, yet touching like poems.</motto>
+                <motto-cn>如论文般准确，如诗篇般动人。</motto-cn>
+                <motto-jp>論文のように正確で、詩のように感動的。</motto>
+            <!-- </div> -->
+        </header>
+        <main>
+            <article>
+                <p>I'm a video game and science fiction translator. I used to live in China and the US, and now I'm based in Tokyo, Japan. I also wrote science fiction for the SCP Foundation community. I hold a doctoral degree in engineering.</p>
+                <p>我是一名游戏和科幻小说翻译家。辗转于中美之后，我目前居住在日本东京。我也曾在“SCP基金会”社区创作科幻小说。我拥有工学博士学位。</p>
+                <p class="jp-text">ゲームとサイエンスフィクションの翻訳者です。中国とアメリカで暮らした後、今は東京に住んでいます。「SCP財団」にSF小説を投稿したこともあります。工学の博士号を持っています。</p>
+                <p>Language pairs: English -> Simplified Chinese, Japanese -> Simplified Chinese</p>
+            </article>
+        </main>
+        <main>
+            <div class="container">
+                <div class="left">
+                    <h2>2024</h2>
+                    <h2><a href="https://store.steampowered.com/app/2956820/__Kinki_Spiritual_Affairs_Bureau">近畿霊務局</a></h2>
+                    <br>
+                    <h2>2023</h2>
+                    <h2><a href="https://store.steampowered.com/app/1080680/Cold_Shell/">冰冷躯壳</a></h2>
+                    <br>
+                    <h2>2022</h2>
+                    <h2><a href="https://store.steampowered.com/app/1749630/Chill_Corner/">悠闲角落</a></h2>
+                    <br>
+                    <h2>2021</h2>
+                    <h2><a href="https://store.steampowered.com/app/1218640/Draco_Knight/">龙血骑士</a></h2>
+                    <br>
+                    <h2>2018 -</h2>
+                    <h2><a href="https://scp-wiki-cn.wikidot.com/leafjensen-s-personnel-file/">SCP基金会</a></h2>
+                </div>
+                <div class="right">
+                    <h2>Translation. Japanese -> Simplified Chinese</h2>
+                    <h2>Proofreading. Japanese -> English and Traditional Chinese</h2>
+                    <br>
+                    <h2>Translation. English -> Simplified Chinese</h2>
+                    <h2>Proofreading. Russian -> English</h2>
+                    <br>
+                    <br>
+                    <h2>Translation. English -> Simplified Chinese</h2>
+                    <br>
+                    <br>
+                    <h2>Translation. English -> Simplified Chinese</h2>
+                    <br>
+                    <br>
+                    <h2>Opus magnus. Translation and proofreading. English -> Simplified Chinese</h2>
+                    <h2>Writing in simplified Chinese.</h2>
+                </div>
+            </div>
+        </main>
+        <footer>
+            © 2025 Yizhou Fan. All rights reserved.
         </footer>
     </body>
 
