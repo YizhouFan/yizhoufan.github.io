@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html domain lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width,initial-scale=1" name="viewport">
+        <link
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>LJ</text></svg>"
+            rel="icon">
+        <meta content="#444343" name="theme-color">
+        <meta
+            content="max-snippet:-1, max-image-preview: large, max-video-preview: -1"
+            name="robots">
+        <title>Translator's Portfolio</title>
+        <meta content="Translator's Portfolio" property="og:title">
+        <meta
+            content="A Portfolio for the translator Yizhou Fan a.k.a. LeafJensen"
+            name="description">
+        <meta
+            content="A Portfolio for the translator Yizhou Fan a.k.a. LeafJensen"
+            property="og:description">
+        <meta content="summary_large_image" name="twitter:card">
+        <meta content="@LeafLostIt" name="twitter:site">
+        <meta content="@LeafLostIt" name="twitter:creator">
+        <meta content="no-referrer-when-downgrade" name="referrer">
+        <link href="/" rel="preconnect" crossorigin>
+        <link href="/fonts/nunito-sans-v11-latin-regular.woff2" rel="preload"
+            crossorigin as="font" type="font/woff2">
+        <style>
+        :root {
+            --primary: #66d8ee;
+            --font-primary: #eee;
+            --bg-primary: #272822;
+            --bg-secondary: #444343;
+            --main-width: calc(100vw - 3em)
+        }
+
+        main img {
+            content-visibility: auto
+        }
+
+        article * {
+            scroll-margin-top: 50px
+        }
+
+        header nav {
+            z-index: 1;
+            background: var(--bg-secondary);
+            color: var(--font-primary);
+            font-size: 90%;
+            font-weight: 200;
+            padding: .75em calc(50vw - 37rem + 1.5em);
+            position: fixed;
+            text-align: right;
+            top: 0;
+            width: 100vw
+        }
+
+        @media (min-width:37.5em) {
+            :root {
+                --main-width: calc(37.5em - 3em)
+            }
+        }
+
+        dialog {
+            background-color: #8dff80;
+            position: fixed;
+            opacity: .9;
+            z-index: 1000
+        }
+
+        #header-title {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-around
+        }
+
+        #header-title h1 {
+            margin-right: 1rem
+        }
+
+        #header-title img {
+            border-radius: 50%
+        }
+
+        #header-title picture {
+            width: 21%
+        }
+
+        #nav {
+            z-index: 2;
+            position: relative
+        }
+
+        #posts li {
+            margin-bottom: .5em
+        }
+
+        @font-face {
+            font-display: optional;
+            font-family: 'Nunito Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: url(/fonts/nunito-sans-v11-latin-regular.eot);
+            src: local(''), url(/fonts/nunito-sans-v11-latin-regular.eot?#iefix) format('embedded-opentype'), url(/fonts/nunito-sans-v11-latin-regular.woff2) format('woff2'), url(/fonts/nunito-sans-v11-latin-regular.woff) format('woff'), url(/fonts/nunito-sans-v11-latin-regular.ttf) format('truetype'), url(/fonts/nunito-sans-v11-latin-regular.svg#NunitoSans) format('svg')
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+            line-height: 1.15;
+            font-family: Nunito Sans, sans-serif;
+            --font-family: Nunito Sans, sans-serif
+        }
+
+        body,
+        p,
+        ul {
+            font-size: 1em
+        }
+
+        body {
+            margin: 0
+        }
+
+        h1 {
+            font-size: 3em;
+            line-height: 1.25;
+            margin: .67em 0 .5em;
+            font-size: 2.074rem
+        }
+
+        a {
+            background-color: transparent;
+            color: var(--primary);
+            text-decoration: none
+        }
+
+        b {
+            font-weight: 700
+        }
+
+        img {
+            border-style: none;
+            height: auto;
+            margin: 0 auto
+        }
+
+        h2 {
+            font-size: 2.5em;
+            line-height: 1.2;
+            margin-bottom: .6em
+        }
+
+        p,
+        ul {
+            margin-bottom: 1.5em
+        }
+
+        h1,
+        h2 {
+            line-height: 2.4rem;
+            margin-bottom: 1.36rem
+        }
+
+        h2 {
+            font-size: 1.728rem
+        }
+
+        body,
+        p,
+        ul {
+            font-size: 1rem;
+            line-height: 1.6
+        }
+
+        p,
+        ul {
+            margin-bottom: 1.36rem
+        }
+
+        @media (min-width:600px) {
+            h1 {
+                font-size: 4.3978rem;
+                line-height: 4.4rem;
+                margin-bottom: 1.496rem
+            }
+
+            p h2 {
+                font-size: 3.1097rem;
+                line-height: 3.52rem
+            }
+
+            body,
+            p,
+            ul {
+                font-size: 1.1rem;
+                line-height: 1.6
+            }
+
+            h2,
+            p,
+            ul {
+                margin-bottom: 1.496rem
+            }
+        }
+
+        h1,
+        h2,
+        header nav,
+        header nav h1 {
+            font-family: var(--font-family)
+        }
+
+        h2 {
+            font-style: italic
+        }
+
+        a:hover {
+            text-decoration: underline
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px
+        }
+
+        * {
+            border: 0;
+            border-collapse: separate;
+            border-spacing: 0;
+            box-sizing: border-box;
+            max-width: 100%;
+            outline: 0;
+            padding: 0;
+            vertical-align: baseline
+        }
+
+        body,
+        header nav a {
+            color: var(--font-primary);
+            font-family: var(--font-family)
+        }
+
+        body {
+            background: var(--bg-primary)
+        }
+
+        header {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            font-weight: 300;
+            margin: 0 auto;
+            padding: 4.5em 1.5em 3em;
+            text-align: center;
+            width: 45em
+        }
+
+        header p {
+            margin-top: 0
+        }
+
+        header nav h1 {
+            float: left;
+            font-size: inherit;
+            line-height: inherit;
+            margin: 0 1.5em;
+            text-align: left
+        }
+
+        header nav a {
+            font-weight: 700;
+            margin-left: 1.5em;
+            text-decoration: none
+        }
+
+        header nav a:first-of-type {
+            margin-left: auto
+        }
+
+        header nav a:last-of-type {
+            margin-right: 1.5em
+        }
+
+        main {
+            border-top: .5px solid #ccc;
+            margin: 0 auto;
+            max-width: 70rem
+        }
+
+        footer {
+            background: var(--bg-secondary);
+            color: var(--font-primary);
+            padding: 3em;
+            text-align: center
+        }
+
+        footer>* {
+            margin: 1.5em
+        }
+
+        footer nav a {
+            margin: 0 .375em
+        }
+
+        footer nav a img {
+            vertical-align: middle
+        }
+
+        footer nav,
+        footer p {
+            font-size: 90%
+        }
+
+        article {
+            margin: 0 auto;
+            padding: 1.5em;
+            width: 45em
+        }
+
+        ul {
+            margin-left: 31.5px
+        }
+
+        li ul {
+            margin-bottom: 0
+        }
+    </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+            </nav>
+            <div id="header-title">
+                <h1>Translator's Portfolio</h1>
+            </div>
+            <dialog id="message"></dialog>
+        </header>
+        <main>
+            <article>
+                <p>Video game translator based in Tokyo, Japan.</p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </article>
+        </main>
+        <footer>
+            <a href="mailto:leafjensen14@gmail.com"><svg fill="#eee" height="24"
+                    role="img" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Gmail</title>
+                    <path
+                        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z">
+                    </path>
+                </svg>
+            </a>
+            <a href="https://www.twitter.com/LeafLostIt"><svg fill="#eee"
+                    height="24" role="img" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Twitter</title>
+                    <path
+                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
+                    </path>
+                </svg>
+            </a>
+        </footer>
+    </body>
+
+</html>
