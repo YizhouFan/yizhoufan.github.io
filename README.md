@@ -8,6 +8,6 @@ I might add other aspects of me in the future.
 
 [![pages-build-deployment](https://github.com/YizhouFan/yizhoufan.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/YizhouFan/yizhoufan.github.io/actions/workflows/pages/pages-build-deployment)
 
-![master](https://img.shields.io/github/last-commit/badges/shields/master)
+[![GitHub last commit](https://img.shields.io/github/last-commit/yizhoufan/yizhoufan.github.io)](https://github.com/YizhouFan/yizhoufan.github.io/commits/main/?author=YizhouFan)
 
 [![forthebadge](https://forthebadge.com/images/featured/featured-built-with-love.svg)](https://forthebadge.com)
