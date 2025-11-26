@@ -1,4 +1,4 @@
-Yizhou Fan, a.k.a LeafJensen's translator portfolio.
+LeafJensen's translator portfolio.
 
 I might add other aspects of me in the future.
 
