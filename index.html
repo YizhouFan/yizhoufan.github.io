@@ -44,7 +44,10 @@
 
 <body>
     <header class="site-nav">
-        <a class="site-nav__brand" href="#top"><span class="hl">Leaf</span>Jensen</a>
+        <div class="site-nav__left">
+            <a class="site-nav__brand" href="#top"><span class="hl">Leaf</span>Jensen</a>
+            <span class="site-nav__count" id="visit-count" hidden></span>
+        </div>
         <nav class="site-nav__social" aria-label="Elsewhere">
             <a href="mailto:leafjensen14@gmail.com" aria-label="Email">
                 <svg viewBox="0 0 24 24" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -379,6 +382,32 @@
     <footer class="site-footer">
         &copy; 2026 LeafJensen. All rights reserved.
     </footer>
+
+    <script>
+        (function () {
+            var el = document.getElementById('visit-count');
+            if (!el) return;
+            var BASELINE = 1700; // visits tallied before this counter went live
+            var show = function (n) {
+                el.textContent = n.toLocaleString() + ' visits';
+                el.hidden = false;
+            };
+            show(BASELINE);
+            if (!window.fetch) return;
+            var endpoint = 'https://abacus.jasoncameron.dev/';
+            var counter = 'leafjensen.com/views';
+            var counted = false;
+            try { counted = sessionStorage.getItem('counted') === '1'; } catch (e) {}
+            fetch(endpoint + (counted ? 'get' : 'hit') + '/' + counter)
+                .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+                .then(function (data) {
+                    if (typeof data.value !== 'number') return;
+                    try { sessionStorage.setItem('counted', '1'); } catch (e) {}
+                    show(BASELINE + data.value);
+                })
+                .catch(function () { /* keep the baseline if the counter is unreachable */ });
+        })();
+    </script>
 </body>
 
 </html>
