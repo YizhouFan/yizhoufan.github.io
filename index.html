@@ -435,6 +435,31 @@
                 .catch(function () { /* keep the baseline if the counter is unreachable */ });
         })();
     </script>
+
+    <script>
+        document.addEventListener('click', function (e) {
+            var a = e.target.closest('a[href]');
+            if (!a || typeof gtag !== 'function') return;
+            var href = a.getAttribute('href');
+            var where = a.closest('.site-nav') ? 'nav' : a.closest('.prose') ? 'about' : 'page';
+            var titles;
+
+            if (href.indexOf('mailto:') === 0) {
+                gtag('event', 'email_click', { link_location: where });
+            } else if (/(^|\.)x\.com\//.test(a.hostname + '/')) {
+                gtag('event', 'x_click', { link_location: where });
+            } else if (/mobygames\.com$/.test(a.hostname)) {
+                gtag('event', 'mobygames_click', { link_location: where });
+            } else if (a.classList.contains('cover')) {
+                gtag('event', 'cover_click', { project: href.replace('#p-', '') });
+            } else if ((titles = a.closest('.project__titles'))) {
+                gtag('event', 'store_click', { project: titles.id.replace('p-', ''), link_url: a.href });
+            } else if (a.closest('article[aria-labelledby="p-scp"]')) {
+                var edition = { 'scp-jp.wikidot.com': '-jp', 'scpko.wikidot.com': '-ko', 'scp-int.wikidot.com': '-en' }[a.hostname] || '';
+                gtag('event', 'scp_click', { scp_link: a.pathname.replace(/^\/|\/$/g, '') + edition, link_url: a.href });
+            }
+        });
+    </script>
 </body>
 
 </html>
